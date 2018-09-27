@@ -11,5 +11,15 @@
     <input name="text" type="text" />
     <input type="submit">
   </form>
+  <ul>
+    <% todos.forEach((todo) => { %>
+      <li>
+        <%= todo.todo %>
+        <button id="<%= todo.id %>">Delete</button>
+      </li>
+    <% }); %>
+    <!-- <li><%= todos.length %></li> -->
+  </ul>
+  
 </body>
 </html>
